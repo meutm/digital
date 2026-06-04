@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07070a" />
+  <title>MEU Timișoara — Platform Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <main class="shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">MEU Timișoara Digital Infrastructure</p>
+        <h1>One portal. Every platform.</h1>
+        <p class="lead">A curated access layer for the full MEU Timișoara ecosystem: operations, participants, documents, feedback, safety, reporting and visual memory.</p>
+      </div>
+      <div class="brand-orb" aria-label="MEU Timișoara logo">
+        <img src="assets/meu-logo.png" alt="Model European Union Timișoara" />
+      </div>
+    </header>
+
+    <section class="command-bar" aria-label="Platform filters">
+      <button class="chip active" data-filter="all">All platforms</button>
+      <button class="chip" data-filter="public">Public</button>
+      <button class="chip" data-filter="participants">Participants</button>
+      <button class="chip" data-filter="internal">Internal</button>
+      <button class="chip" data-filter="ops">Operations</button>
+      <div class="search-wrap"><input id="search" type="search" placeholder="Search platform, workflow, feedback, safety…" /></div>
+    </section>
+
+    <section class="grid" id="portal-grid" aria-label="MEU Timișoara platform directory"></section>
+  </main>
+
+  <footer class="footer">
+    <span>Model European Union Timișoara</span>
+    <span>Curated access layer · 2026</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
